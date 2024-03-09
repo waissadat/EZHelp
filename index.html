@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700italic,700,900&amp;subset=latin,latin-ext">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Serif:700italic,700,400italic&amp;subset=latin,cyrillic-ext,latin-ext,cyrillic">
+    <title>Sparkle Squad Car Wash</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/74c289caab.js" crossorigin="anonymous"></script>
+    <style>
+        /* Additional CSS for sticky header */
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #fff; /* Adjust as needed */
+            z-index: 1000; /* Ensure it appears above other content */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">   
+            <h1> <i class="fa-solid fa-car"></i>Sparkle Squad </h1>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <!-- Social Icons -->
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </header>
+
+    <div class="banner">
+        <p>Welcome to Sparkle Squad Car Wash and Detailing</p>
+        <h1>Your car is always <br>in great hands with us.</h1>
+        <a href="#" class="btn">Book Now</a>
+    </div>
+
+    <div class="about-container">
+            <div class="about-heading">
+            <h1>Who are We ?</h1>
+            <h3>Car wash & detailling service</h3>
+        </div>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="./image/car-wash-02.jpg" alt="Car Wash Image">
+            </div>
+            <div class="about-text">
+                <p>Experience the convenience of Sparkle Squad's mobile car wash and detailing service. Our skilled team brings premium car care directly to your doorstep. With eco-friendly products and expert techniques, we ensure your vehicle shines inside and out. Sit back, relax, and let us handle the rest while you attend to what truly matters. Book your appointment now for a hassle-free car care experience.</p>
+                <div class="about-columns">
+                    <span class="symbol">&#9733;</span>
+                    <h2>The Best Car Wash</h2>
+                    <ul class="best-company">
+                        <li>We offer multiple services at a great value</li>
+                        <li>Available throughout Virginia</li>
+                        <li>Biodegradable and eco-friendly products</li>
+                        <li>Pay for your wash electronically and securely</li>
+                        <li>Trained and skilled car wash crew members</li>
+                    </ul>
+                </div>
+                <div class="about-columns">
+                    <span class="symbol">&#9733;</span>
+                    <h2>Contacting Us</h2>
+                    <ul class="contact-us">
+                        <li>We are very open and easy to reach company</li>
+                        <li>Our email is checked hourly during the day</li>
+                        <li>Book an appointment online under 3 minutes</li>
+                        <li>Our toll-free number will be answered</li>
+                        <li>You can pay online for your appointment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>        
+        </section>
+    </div>
+
+    <div class="template-section template-section-padding-reset template-clear-fix template-background-color-1">
+        <!-- Call to action -->
+        <div class="template-component-call-to-action">
+            <div class="template-main">
+                <h3>No 1. Car Wash Booking System</h3>
+                <a href="https://quanticalabs.com/Autospa/Template/?page=book-your-wash" class="template-component-button">Book Appointment</a>
+            </div>
+        </div>
+    </div>
+<!-- Service Banner -->
+<div class="service-banner">
+    <div class="service-header">
+        <h2>Our Services</h2>
+        <p>Discover what we offer</p>
+    </div>
+</div>
+<!-- Service Offer -->
+<div class="about-container">
+    <div class="about-heading">
+    <h1>WASH PACKAGES</h1>
+    <h3>Which wash is the best for your vehicle?</h3>
+</div>
+
+<div class="services">
+    <div class="service-box" onclick="bookService('Package1')">
+        <span class="symbol">&#9733;</span>
+        <p>Regular Size Car</p>
+    </div>
+    <div class="service-box" onclick="bookService('Package1')">
+        <span class="symbol">&#9733;</span>
+        <p>Medium Size Car</p>
+    </div>
+    <div class="service-box" onclick="bookService('Package1')">
+        <span class="symbol">&#9733;</span>
+        <p>Compact SUV</p>
+    </div>
+    <div class="service-box" onclick="bookService('Package1')">
+        <span class="symbol">&#9733;</span>
+        <p>Minivan</p>
+    </div>
+    <div class="service-box" onclick="bookService('Package2')">
+        <span class="symbol">&#9733;</span>
+        <p>Pickup Truck</p>
+    </div>
+    <div class="service-box" onclick="bookService('Package3')">
+        <span class="symbol">&#9733;</span>
+        <p>Cargo Truck</p>
+    </div>
+</div>
+
+
+<div id="package-container"></div>
+
+<div class="page-layout">
+    <!-- Left column with image -->
+    <div class="left-column">
+        <img src="image/asdfasdf.jpg" alt="Placeholder Image">
+    </div>
+    <!-- Right column with sections -->
+    <div class="right-column">
+        <!-- First section -->
+        <div class="section">
+            <span class="symbol">⚙️</span>
+            <h2>CONVENIENCE</h2>
+            <p>We are dedicated to providing quality service, customer satisfaction at a great value in multiple locations offering convenient hours.</p>
+        </div>
+        <!-- Second section -->
+        <div class="section">
+            <span class="symbol">🛠️</span>
+            <h2>ORGANIC PRODUCTS</h2>
+            <p>Our products are eco-friendly and interior products are all organic. We use less than a gallon of water with absolutely zero-waste.</p>
+        </div>
+        <!-- Third section -->
+        <div class="section">
+            <span class="symbol">🔧</span>
+            <h2>EXPERIENCED TEAM</h2>
+            <p>Our crew members are all trained and skilled and fully equiped with equipment and supplies needed that we can deliver the best results.</p>
+        </div>
+        <!-- Fourth section -->
+        <div class="section">
+            <span class="symbol">🔩</span>
+            <h2>GREAT VALUE</h2>
+            <p>We offer multiple services at a great value to meet your needs. We offer a premium service while saving your time and money.</p>
+        </div>
+    </div>
+</div>
+    <script>
+        window.onscroll = function() {stickyHeader()};
+    
+        var header = document.querySelector("header");
+        var sticky = header.offsetTop;
+    
+        function stickyHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+
+        window.onscroll = function() {stickyHeader()};
+
+var header = document.querySelector("header");
+var sticky = header.offsetTop;
+
+function stickyHeader() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+}
+
+function bookService(serviceType) {
+    // Define the packages for each service type
+    const packages = {
+        'Package1': [
+            { 
+                name: 'Basic Wash', 
+                price: '20',
+                list: [
+                    'Exterior Hand Wash',
+                    'Towel Hand Dry',
+                    'Wheel Shine'
+                ]
+            },
+            { 
+                name: 'Deluxe Wash', 
+                price: '30',
+                list: [
+                    'Exterior Hand Wash',
+                    'Towel Hand Dry',
+                    'Wheel Shine',
+                    'Tire Dressing',
+                    'Windows In & Out',
+                    'Sealer Hand Wax'
+                ]
+            },
+            { 
+                name: 'Ultimate Shine', 
+                price: '40',
+                list: [
+                    'Exterior Hand Wash',
+                    'Towel Hand Dry',
+                    'Wheel Shine',
+                    'Tire Dressing',
+                    'Windows In & Out',
+                    'Sealer Hand Wax',
+                    'Interior Vacuum',
+                    'Trunk Vacuum',
+                    'Door Shuts & Plastics',
+                    'Dashboard Clean'
+                ]
+            },
+            { 
+                name: 'Platinum Works', 
+                price: '40',
+                list: [
+                    'Exterior Hand Wash',
+                    'Towel Hand Dry',
+                    'Wheel Shine',
+                    'Tire Dressing',
+                    'Windows In & Out',
+                    'Sealer Hand Wax',
+                    'Interior Vacuum',
+                    'Trunk Vacuum',
+                    'Door Shuts & Plastics',
+                    'Dashboard Clean',
+                    'Air Freshener',
+                    'Triple Coat Hand Wax',
+                    'Exterior Vinyl Protectant'
+                ]
+            }
+        ],
+
+        'Package2': [
+            { 
+                name: 'Basic Wash', 
+                price: '20',
+                list: [
+                    'Exterior Hand Wash',
+                    'Towel Hand Dry',
+                    'Wheel Shine'
+                ]
+            },
+            { 
+                name: 'Deluxe Wash', 
+                price: '30',
+                list: [
+                    'Exterior Hand Wash',
+                    'Towel Hand Dry',
+                    'Wheel Shine',
+                    'Tire Dressing',
+                    'Windows In & Out',
+                    'Sealer Hand Wax'
+                ]
+            },
+            { 
+                name: 'Platinum Works', 
+                price: '40',
+                list: [
+                    'Exterior Hand Wash',
+                    'Towel Hand Dry',
+                    'Wheel Shine',
+                    'Tire Dressing',
+                    'Windows In & Out',
+                    'Sealer Hand Wax',
+                    'Interior Vacuum',
+                    'Trunk Vacuum',
+                    'Door Shuts & Plastics',
+                    'Dashboard Clean',
+                    'Air Freshener',
+                    'Triple Coat Hand Wax',
+                    'Exterior Vinyl Protectant'
+                ]
+            }
+        ],
+
+        'Package3': [
+            { 
+                name: 'Basic Wash', 
+                price: '20',
+                list: [
+                    'Exterior Hand Wash',
+                    'Towel Hand Dry',
+                    'Wheel Shine'
+                ]
+            },
+            { 
+                name: 'Deluxe Wash', 
+                price: '30',
+                list: [
+                    'Exterior Hand Wash',
+                    'Towel Hand Dry',
+                    'Wheel Shine',
+                    'Tire Dressing',
+                    'Windows In & Out',
+                    'Sealer Hand Wax'
+                ]
+            }
+        ]
+        // Add other packages with their respective lists
+        // Define other service types and their packages
+    };
+
+    // Get the packages for the selected service type
+    const selectedPackages = packages[serviceType];
+
+    // Display the packages
+    const packageContainer = document.getElementById('package-container');
+    packageContainer.innerHTML = ''; // Clear previous packages
+
+    selectedPackages.slice(0, 4).forEach(package => { // Iterate only over the first four packages
+        const packageElement = document.createElement('div');
+        packageElement.classList.add('package-box');
+        packageElement.innerHTML = `
+            <h3>${package.name}</h3>
+            <p><strong><sup>$</sup>${package.price}</strong></p>
+            <hr>
+            <span>&#9201; ${getRandomTime()}</span>
+            <hr>
+            <ul>
+                ${package.list.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+            <button class="book-now">Book Now</button>
+        `;
+        packageContainer.appendChild(packageElement);
+    });
+}
+
+function getRandomTime() {
+    const hours = Math.floor(Math.random() * 3) + 1; // Random number between 1 and 3
+    return `${hours} hour${hours !== 1 ? 's' : ''}`;
+}
+
+// Call the function to initially display the packages
+bookService('Package1');
+
+
+    </script>
+      
+</body>
+</html>

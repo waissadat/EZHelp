@@ -1,0 +1,606 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+header {
+    background-color: transparent;
+    padding: 20px 0;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between; /* Align logo to the left and social icons to the right */
+    align-items: center; /* Align items vertically */
+}
+
+header .logo {
+    padding-left: 60px;
+    padding-right: 20px; /* Add space between logo and navigation links */
+}
+
+header nav {
+    flex: 1; /* Allow navigation to take up remaining space */
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+header nav ul li a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 36px 20px 36px 20px;
+}
+
+header .social {
+    padding-right: 60px; /* Add space between social icons and navigation links */
+}
+
+header .social i {
+    margin-right: 20px;
+    color: white;
+}
+
+/* Add this CSS to your styles.css file */
+
+header.sticky {
+    background-color: #fff;
+    color: #a3a1a1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header.sticky .logo h1 {
+    color: #000000; /* Change the color of the logo to blue when header is sticky */
+}
+header.sticky .logo i {
+    color: #199CDB; /* Change the color of the logo to blue when header is sticky */
+}
+
+header .navigation ul li a:hover {
+    color: #199CDB; /* Change the color of navigation links on hover */
+}
+
+header.sticky .social i {
+    color: #a3a1a1;
+}
+
+header .social i:hover {
+    color: #199CDB; /* Change the color of navigation links on hover */
+}
+
+
+.banner {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    height: 700px;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: url(./image/bannar1.jpg); /* Replace with your banner image URL */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    letter-spacing: 4px;
+    visibility: inherit;
+    text-align: inherit;
+    line-height: 62px;
+    border-width: 0px;
+    margin: 0px;
+    margin-bottom: 40px;
+    padding: 0px;
+    font-weight: 900;
+    font-size: 62px;
+    white-space: nowrap;
+}
+
+.banner p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.banner .btn {
+    background-color: transparent;
+    text-transform: capitalize;
+    color: #ffffff;
+    border: 2px solid white;
+    padding: 16px 38px;
+    text-decoration: none;
+    border-radius: 30px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    margin: 0px;
+    border-width: 1px;
+    text-align: inherit;
+    line-height: 15px;
+    font-size: 15px;
+}
+
+.banner .btn:hover {
+    background-color: #199CDB;
+    border: none;
+}
+
+.main-content {
+    padding: 100px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the left on smaller screens */
+    }
+
+    header .logo {
+        padding: 0 20px; /* Adjust padding for smaller screens */
+    }
+
+    header .social {
+        padding-right: 20px; /* Adjust padding for smaller screens */
+    }
+
+    header nav {
+        margin-top: 20px; /* Add space between logo and navigation links on smaller screens */
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header nav ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    .banner h1 {
+        font-size: 24px;
+    }
+
+    .banner p {
+        font-size: 18px;
+    }
+
+    .banner .btn {
+        font-size: 16px;
+    }
+}
+.about-container .about-heading h1 {
+    font-weight: 700;
+    text-align: center;
+    color: #222222;
+    margin-bottom: 40px; /* Increased margin for space */
+    position: relative;
+    font-size: 29px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+
+.about-container .about-heading h1::after {
+    content: "";
+    display: block;
+    width: 20px; /* Increased width */
+    height: 3px; /* Adjusted height */
+    background-color: #ccc;
+    position: absolute;
+    bottom: -30px; /* Adjusted position */
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about-heading {
+    padding: 110px 0px 120px 0px;
+    padding-bottom: 60px;
+}
+
+h3 {
+    text-align: center;
+    color: #199CDB;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-style: italic;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+}
+
+.about-img {
+    width: 30%;
+    margin-left: 120px;
+}
+
+.about-img img {
+    width: 100%;
+    height: auto; /* Adjust the height automatically based on the width */
+    max-height: 500px; /* Set a maximum height */
+    margin-right: 30px; /* Add margin from the right edge */
+    margin-bottom: 80px;
+}
+
+.about-text {
+    width: 65%; /* Adjust width to accommodate text */
+}
+
+.about-text p {
+    margin-right: 140px; /* Add margin from the right edge */
+    margin-left: 80px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-bottom: 60px;
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+.about-columns {
+    display: inline-block;
+    margin-left: 50px; /* Adjusted margin */
+}
+
+.about-text .about-columns .symbol {
+    font-size: 20px;
+    margin: 100px;
+}
+
+.about-text h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-inline-start: 30px;
+    margin-top: 20px;
+    font-size: 16px; /* Adjusted font size */
+    color: #222222; /* Adjusted text color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about-text ul {
+    margin-bottom: 20px;
+    color: #777777;
+}
+
+.about-text ul li {
+    margin-bottom: 5px;
+    line-height: 28px; /* Adjusted line height */
+    word-spacing: 1px;
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+
+/* Additional styling for ul */
+.about-text ul {
+    margin-left: 50px;
+}
+
+.template-component-call-to-action {
+    display: block;
+    background-color: #f0f0f0b9;
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center align text and button */
+}
+
+.template-component-call-to-action .template-main h3 {
+    display: inline-block;
+    font-size: 1.17em;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    vertical-align: middle; /* Align vertically with button */
+    font-style: normal;
+}
+
+.template-component-call-to-action .template-main .template-component-button {
+    display: inline-block; /* Display button inline */
+    background-color: transparent;
+    color: #199CDB;
+    border: 2px solid #199CDB;
+    border-radius: 30px; /* Add border radius to button */
+    padding: 15px 30px; /* Add padding to button for better appearance */
+    text-decoration: none;
+    margin-left: 30px; /* Add margin to the left of the button */
+    margin-top: 20px; /* Move the button 10px down */
+    vertical-align: middle; /* Align vertically with h3 */
+}
+
+.template-component-call-to-action .template-main .template-component-button:hover {
+    background-color: #199CDB;
+    border: none;
+    color: white;
+}
+
+.service-header {
+    background: url(./image/bmw-2964072_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    padding-bottom: 60px; /* Adjust padding as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.service-banner {
+    height: 100vh;
+    overflow: hidden; /* Hide overflow content */
+    top: 0; /* Position at the top */
+    width: 100%; /* Full width */
+}
+
+.service-header {
+    background: url(./image/bmw-2964072_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-header h2 {
+    margin-bottom: 10px; /* Adjust space between h2 and line */
+    font-size: 29px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.service-header p {
+    text-align: center;
+    margin-bottom: 10px; /* Adjust space between p and line */
+}
+
+.service-line {
+    width: 80%; /* Adjust the width of the line */
+    height: 10px; /* Adjust the height of the line */
+    background-color: white; /* Set line color */
+    margin-bottom: 20px; /* Adjust space between line and h2 */
+}
+
+.service-offer {
+    padding-top: 110px;
+    padding-bottom: 60px;
+
+}
+
+/* CSS for service boxes */
+.services {
+    display: flex;
+    justify-content: center; /* Center the boxes horizontally */
+    margin-top: 50px;
+    flex-wrap: wrap; /* Allow boxes to wrap to the next line */
+}
+
+.service-box {
+    width: calc(13% - 20px); /* Set a fixed width for each box */
+    padding: 20px;
+    border-bottom: 2px solid #A8B1B6;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 10px 20px; /* Adjusted margin */
+    box-sizing: border-box; /* Include padding and border in the box's total width */
+}
+
+.service-box:hover {
+    background-color: #199CDB;
+    color: #fff;
+}
+
+/* CSS for package container and package boxes */
+#package-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-left: 133px; /* Add margin to the left */
+    margin-right: 133px; /* Add margin to the right */
+    margin-bottom: 15vh;
+}
+
+.package-box {
+    display: flex; /* Add display flex */
+    flex-direction: column; /* Align items in a column */
+    width: calc(22% - 10px); /* Adjusted width with reduced space between boxes */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    color: #777777;
+    text-align: center; /* Center-align the content */
+    margin: 0 10px; /* Set margin to create space between boxes */
+}
+
+.package-box h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 2px;
+    margin-top: 0;
+    color: #222222;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.package-box p {
+    margin: 10px 0;
+}
+
+.package-box strong {
+    display: block; /* Ensures the text-align property works */
+    margin: 10px 0;
+    color: #199CDB;
+    font-size: 3.5rem;
+    text-align: center; /* Center the text */
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.package-box p strong sup {
+    font-size: 50%; /* Make the sup smaller */
+}
+
+.package-box hr {
+    margin: 10px 0;
+}
+
+.package-box ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove default padding */
+    text-align: center; /* Center-align text */
+    color: #777777;
+    margin-bottom: auto; /* Align ul to the top of the box */
+}
+
+.package-box ul li {
+    display: block; /* Display list items in a row */
+    margin: 0 10px; /* Add some horizontal spacing between list items */
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.package-box button.book-now {
+    background-color: transparent;
+    color: #199CDB;
+    border: 2px solid #199CDB;
+    border-radius: 30px; /* Add border radius to button */
+    padding: 10px 20px; /* Adjusted padding for button */
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s; /* Added transition effect */
+    width: auto; /* Set width to auto */
+    margin-left: 0; /* Reset margin on the left */
+    margin-right: 0; /* Reset margin on the right */
+}
+
+.package-box button.book-now:hover {
+    background-color: #199CDB;
+    border: none;
+    color: white;
+}
+
+.page-layout img {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Main container */
+.page-layout {
+    display: flex;
+    width: 100%;
+    background-color: #f0f0f0b9;
+    margin-bottom: 60px;
+}
+
+/* Left column */
+.page-layout .left-column {
+    width: 50%;
+    display: inline-block;
+
+}
+
+ /* Right column */
+ .page-layout .right-column {
+    width: 50%;
+    padding: 20px; /* Adjust padding as needed */
+}
+
+/* Sections */
+.page-layout .right-column .section {
+    margin-bottom: 20px; /* Add space between sections */
+    padding: 20px; /* Add padding */
+}
+
+/* Symbol style */
+.page-layout .right-column .section .symbol {
+    font-size: 24px;
+}
+
+/* H2 style */
+.page-layout .right-column .section h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-inline-start: 30px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #222222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Paragraph style */
+.page-layout .right-column .section p {
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: justify;
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Grid layout for sections */
+@media (min-width: 768px) {
+    .page-layout .right-column {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px; /* Adjust gap between sections */
+    }
+}
